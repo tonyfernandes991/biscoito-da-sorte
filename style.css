@@ -1,0 +1,250 @@
+/* font-family: 'Dancing Script', cursive;
+font-family: 'DM Sans', sans-serif;
+font-family: 'Montserrat', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+    
+}
+
+body{
+    background: linear-gradient(45deg, #190361 0%, #B0F 100%);
+    animation: gradient 10s ease infinite;
+    background-size: 200% 200%; 
+    
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    
+    
+    
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    
+
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    /* min-width: 4.28rem; */
+    border-radius: 5px;
+    background: #FFF;
+
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);  
+}
+
+h1{
+    color: #34355B;
+
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 2.4rem;
+    font-weight: 700;
+    
+
+    padding-bottom: 1.4rem;
+}
+
+p{
+    color: #34355B;
+
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    padding-bottom: 2rem;
+}
+
+button{
+    display: block;
+    margin: 0 auto;
+    background: #FFF;
+    border: none;
+    cursor: pointer;
+   
+   
+    
+    
+}
+
+
+
+
+.img-one:hover{
+    animation: vibrate-3 0.5s linear infinite both;
+}
+
+.invisible{
+    display: none;
+}
+
+
+/* screen two */
+
+.box-text{
+    
+    font-family: Dancing Script;
+    color: #000;
+    margin: 0 auto;
+    
+
+    text-align: center;
+    font-family: Dancing Script;
+    font-size: 2.4rem;
+    padding: 1rem;
+    max-width: 29.3rem; 
+    background: #E4EDF1;
+    box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
+    margin-bottom: 6rem;
+
+}
+
+.img-two{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+
+    
+}
+
+.btnReset{
+    display: block;
+    margin: 0 auto;
+
+    color: #FFF;
+
+    font-family: DM Sans;
+    font-weight: 700;
+
+    padding: 1.6rem;
+    font-size: 1.5rem;
+    border-radius: 4px;
+    background: #FF9500;
+}
+
+
+.box-apparence {
+    animation: message 0.9s linear both;
+ }
+
+
+ /* animações */
+
+
+
+@keyframes vibrate-3 {
+    0% {
+       transform: translate(0);
+    }
+ 
+    10% {
+       transform: translate(-2px, -2px);
+    }
+ 
+    20% {
+       transform: translate(2px, -2px);
+    }
+ 
+    30% {
+       transform: translate(-2px, 2px);
+    }
+ 
+    40% {
+       transform: translate(2px, 2px);
+    }
+ 
+    50% {
+       transform: translate(-2px, -2px);
+    }
+ 
+    60% {
+       transform: translate(2px, -2px);
+    }
+ 
+    70% {
+       transform: translate(-2px, 2px);
+    }
+ 
+    80% {
+       transform: translate(-2px, -2px);
+    }
+ 
+    90% {
+       transform: translate(2px, -2px);
+    }
+ 
+    100% {
+       transform: translate(0);
+    }
+ }
+
+
+
+ @keyframes message {
+    0% {
+       transform: translateY(-20rem);
+       scale: 0;
+       opacity: 0.2;
+    }
+ 
+    50% {
+       scale: 50%;
+    }
+ 
+    100% {
+       transform: translateY(0);
+       scale: 100%;
+       opacity: 1;
+    }
+ }
+ 
+ @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+ 
+@media (max-width: 508px){
+    main{ 
+        width: 92%;
+        margin: 2rem;
+    }
+}
+
+@media( max-width: 427px){
+ 
+    
+    main{
+        width: 85%;
+        padding: 1.4rem 1.2rem 1.2rem 1.2rem;  
+        margin: 1rem; 
+    }
+
+    .screen_two{
+        max-width: 70%;
+    }
+    
+    .img-two{
+        max-width: 90%;
+    }
+
+}
+
+
